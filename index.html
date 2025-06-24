@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCut Lawn Services - Professional Lawn Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>GreenCut Lawn Services</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#request" class="cta-button">Get Quote</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Professional Lawn Care Services</h1>
+            <p>Transform your yard with our expert lawn mowing and landscaping services. Quality work, reliable service, competitive prices.</p>
+            <div class="hero-buttons">
+                <a href="#request" class="btn-primary">Request Service</a>
+                <a href="#services" class="btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <span>Insured & Licensed</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>Reliable Scheduling</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Competitive Pricing</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-cut"></i>
+                    <h3>Lawn Mowing</h3>
+                    <p>Regular lawn mowing with professional equipment. Weekly, bi-weekly, or monthly schedules available.</p>
+                    <ul>
+                        <li>Precision cutting</li>
+                        <li>Edge trimming</li>
+                        <li>Grass collection</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Lawn Care</h3>
+                    <p>Complete lawn maintenance including fertilizing, aeration, and seasonal treatments.</p>
+                    <ul>
+                        <li>Fertilization</li>
+                        <li>Weed control</li>
+                        <li>Aeration</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Landscaping</h3>
+                    <p>Design and maintain beautiful landscapes that enhance your property's curb appeal.</p>
+                    <ul>
+                        <li>Garden design</li>
+                        <li>Plant installation</li>
+                        <li>Mulching</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-broom"></i>
+                    <h3>Cleanup Services</h3>
+                    <p>Seasonal cleanup services to keep your yard looking pristine year-round.</p>
+                    <ul>
+                        <li>Leaf removal</li>
+                        <li>Debris cleanup</li>
+                        <li>Seasonal prep</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About GreenCut Lawn Services</h2>
+                    <p>With over 10 years of experience in lawn care and landscaping, we pride ourselves on delivering exceptional results for residential and commercial properties.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfaction Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-tools"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Request Form -->
+    <section id="request" class="request-form">
+        <div class="container">
+            <h2>Request a Service</h2>
+            <p>Fill out the form below and we'll get back to you with a free quote within 24 hours.</p>
+            
+            <form id="serviceRequestForm" class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Property Address *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="propertySize">Property Size</label>
+                        <select id="propertySize" name="propertySize">
+                            <option value="">Select size</option>
+                            <option value="small">Small (< 0.25 acres)</option>
+                            <option value="medium">Medium (0.25 - 0.5 acres)</option>
+                            <option value="large">Large (0.5 - 1 acre)</option>
+                            <option value="xlarge">Extra Large (> 1 acre)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">Service Type *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select service</option>
+                            <option value="mowing">Lawn Mowing</option>
+                            <option value="fullcare">Complete Lawn Care</option>
+                            <option value="landscaping">Landscaping</option>
+                            <option value="cleanup">Cleanup Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="frequency">Service Frequency</label>
+                    <select id="frequency" name="frequency">
+                        <option value="">Select frequency</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="biweekly">Bi-weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="onetime">One-time service</option>
+                        <option value="seasonal">Seasonal</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us more about your lawn care needs, any specific requirements, or questions you have..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <span class="checkmark"></span>
+                        I'd like to receive lawn care tips and seasonal reminders
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit Request
+                </button>
+            </form>
+            
+            <div id="formMessage" class="form-message" style="display: none;"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@greencutlawn.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Service Area</h3>
+                        <p>Metro area & surrounding communities</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Mon-Fri: 7AM-6PM<br>Sat: 8AM-4PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>GreenCut Lawn Services</span>
+                    </div>
+                    <p>Professional lawn care services you can trust. Licensed, insured, and committed to your satisfaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Lawn Mowing</a></li>
+                        <li><a href="#services">Lawn Care</a></li>
+                        <li><a href="#services">Landscaping</a></li>
+                        <li><a href="#services">Cleanup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>(555) 123-4567</li>
+                        <li>info@greencutlawn.com</li>
+                        <li>Licensed & Insured</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GreenCut Lawn Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
