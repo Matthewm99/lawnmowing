@@ -17,6 +17,11 @@ body {
     padding: 0 20px;
 }
 
+.hero .container {
+    width: 100%;
+    max-width: 1400px;
+}
+
 /* Header and Navigation */
 .header {
     position: fixed;
@@ -102,22 +107,29 @@ body {
     color: white;
     padding: 120px 0 80px;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    max-width: 600px;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero-buttons {
@@ -162,14 +174,26 @@ body {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .feature {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    opacity: 0.9;
+    gap: 0.75rem;
+    opacity: 0.95;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
 }
 
 .feature i {
@@ -178,8 +202,8 @@ body {
 
 /* Services Section */
 .services {
-    padding: 80px 0;
-    background: #f8f9fa;
+    padding: 100px 0;
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
 .services h2 {
@@ -248,7 +272,8 @@ body {
 
 /* About Section */
 .about {
-    padding: 80px 0;
+    padding: 100px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .about-content {
@@ -305,8 +330,8 @@ body {
 
 /* Service Request Form */
 .request-form {
-    padding: 80px 0;
-    background: #f8f9fa;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
 }
 
 .request-form h2 {
@@ -436,7 +461,8 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 80px 0;
+    padding: 100px 0;
+    background: linear-gradient(180deg, #e8f5e8 0%, #ffffff 100%);
 }
 
 .contact h2 {
